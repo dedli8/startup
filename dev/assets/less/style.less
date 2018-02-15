@@ -1,0 +1,29 @@
+@import "includes/_settings";
+@import "includes/_fonts";
+@import "includes/_mixins";
+@import "includes/_icons";
+@import "includes/_grid";
+html{
+    font-family: @font-regular, sans-serif;
+    font-size: @font-size-base;
+}
+.container{
+    max-width: @width-max;
+    margin: 0 auto;
+    .media(@width-mid, {
+padding: 0 2%;
+    });
+}
+.valign{
+    position: relative;
+    height: 100%;
+    &-content{
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@import "../../components/nav/_nav";
+
