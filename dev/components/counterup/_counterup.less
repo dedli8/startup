@@ -1,0 +1,94 @@
+.counterup{
+  text-align: center;
+  background-color: @mainblack;
+  padding: 76px 40px 95px 40px;
+  .case-icon-square{
+    position: absolute;
+    top: -97px;
+    left: 137px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: @mainblue;
+    width: 42px;
+    height: 42px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    .case-icon{
+      .sprite(@caseicon);
+      transform: rotate(-45deg);
+    }
+  }
+  .counter-item {
+    display: inline-block;
+    margin-right: 30px;
+    .blacksquare {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background-color: #484848;
+      transform: rotate(45deg);
+      border-radius: 3px;
+      vertical-align: middle;
+      &:nth-child(even) {
+        margin-right: 10%;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+    .counter {
+      margin: 0 15px;
+      font-size: 80px;
+      color: @textwhite;
+      vertical-align: middle;
+      display: inline-block;
+      margin-bottom: 18px;
+    }
+    .counter-icon-box{
+      .counter-line {
+        height: 1px;
+        width: 270px;
+        background-color: #484848;
+        position: relative;
+        .counter-icon-bg {
+          position: absolute;
+          left: 116px;
+          top: -10px;
+          background: @mainblack;
+          padding: 0 10px;
+          .counter-compleateicon {
+            .sprite(@compleateicon);
+          }
+          .counter-hoursicon{
+            .sprite(@hoursicon);
+          }
+          .counter-solvedicon{
+            .sprite(@solvedicon);
+          }
+          .counter-satisfiedicon{
+            .sprite(@satisfiedicon);
+          }
+        }
+      }
+    }
+    .counter-text{
+      font-size: 14px;
+      font-family: @rabold;
+      color: @textblack;
+      text-transform: uppercase;
+      text-align: center;
+      margin-top: 23px;
+      span{
+       font-size: 10px;
+
+      }
+    }
+    &:nth-child(2) .blacksquare{
+    background-color: @mainblue;
+    }
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+}

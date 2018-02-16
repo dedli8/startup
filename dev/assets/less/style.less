@@ -29,8 +29,37 @@ a{
         transform: translateY(-50%);
     }
 }
+.header-box {
+    margin-bottom: 50px;
+    .header-text > *{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .header-text {
+        display: inline-block;
+        position: relative;
+        margin-bottom: 20px;
+        .left-squares {
+        .sprite(@squaresicon1);
+            margin-right: 20px;
+    }
+        font-family: @rabold;
+        font-size: 26px;
+        color: #e4e4e4;
+        span:nth-child(3) {
+            color: @mainblue;
+        }
+        .right-squares {
+            .sprite(@squaresicon2);
+            margin-left: 20px;
+        }
+    }
+
+}
 
 @import "../../components/nav/_nav";
 @import "../../components/amazingfeatures/_amazingfeatures";
 @import "../../components/advantages/_advantages";
+@import "../../components/counterup/_counterup";
+
 

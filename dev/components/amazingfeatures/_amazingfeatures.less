@@ -1,101 +1,73 @@
 //styles of amazingfeatures section
-
 .af {
   overflow-y: hidden;
   padding: 75px 0 0 13px;
   background-color: @mainblack;
   border-top: 2px solid #dedede;
-.container {
   text-align: center;
-  .af-textbox > * {
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-  }
-  .af-textbox {
-    display: inline-block;
-    margin-bottom: 20px;
-    .left-squares {
-      .sprite(@squaresicon1);
-    }
-    h1 {
-      font-family: @rabold;
-      font-size: 26px;
-      color: #e4e4e4;
-      span {
-        color: @mainblue;
-      }
-    }
-    .right-squares {
-      .sprite(@squaresicon2)
-    }
-  }
-  .af-p{
-    margin-bottom: 50px;
-  }
-  .row {
-    .af-menu {
-      width: 100%/3;
-      float: left;
-      padding-top: 40px;
-      .af-item{
-       margin-bottom: 67px;
-        .af-icon{
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 35px;
-        }
+  .container {
+    .row {
+      .af-menu {
+        width: 100%/3;
+        float: left;
+        padding-top: 40px;
+        .af-item {
+          margin-bottom: 67px;
+          .af-icon {
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 35px;
+          }
           .af-resp {
-             .sprite(@responsiveicon);
-           }
-        .af-cust {
-          .sprite(@customizationicon);
-        }
-        .af-feat {
-          .sprite(@featuresicon);
-        }
-        .af-item-text {
-          vertical-align: middle;
-          display: inline-block;
-          width: 280px;
-          text-align: left;
-        p:first-child {
-          font-size: 14px;
-          font-family: @rabold;
-          text-transform: uppercase;
-          color: @textwhite;
-          margin-bottom: 15px;
-        }
-          p:last-child {
-            text-transform: none;
-            color: #7a7a7a;
-            font-family: @ramed;
-            line-height: 22px;
+            .sprite(@responsiveicon);
+          }
+          .af-cust {
+            .sprite(@customizationicon);
+          }
+          .af-feat {
+            .sprite(@featuresicon);
+          }
+          .af-item-text {
+            vertical-align: middle;
+            display: inline-block;
+            width: 280px;
+            text-align: left;
+            p:first-child {
+              font-size: 14px;
+              font-family: @rabold;
+              text-transform: uppercase;
+              color: @textwhite;
+              margin-bottom: 15px;
+            }
+            p:last-child {
+              text-transform: none;
+              color: #7a7a7a;
+              font-family: @ramed;
+              line-height: 22px;
+            }
           }
         }
+      }
+      .display-container {
+        float: right;
+        position: relative;
+        bottom: -111px;
+        height: 390px;
+        .display-pic1 {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 354px;
+          height: 500px;
         }
-
-      }
-    .display-container {
-      float: right;
-      position: relative;
-      bottom: -111px;
-      height: 390px;
-      .display-pic1 {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-        width: 354px;
-        height: 500px;
-      }
-      .display-pic2 {
-        width: 500px;
-        height: 354px;
-        position: absolute;
-        right: 172px;
-        bottom: 0;
+        .display-pic2 {
+          width: 500px;
+          height: 354px;
+          position: absolute;
+          right: 172px;
+          bottom: 0;
+        }
       }
     }
   }
-}
 }
