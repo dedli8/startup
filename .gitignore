@@ -2,3 +2,4 @@ node_modules/
 build/
 .idea/
 dev/assets/less/includes/_sprite.less
+package-lock.json
