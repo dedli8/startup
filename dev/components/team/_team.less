@@ -1,0 +1,177 @@
+//styles of team section
+.team {
+  position: relative;
+  padding-top: 105px;
+  background-color: @bgwhite;
+  padding: 92px 0 98px 0;
+  text-align: center;
+  .gradient-line {
+    height: 1px;
+    background: linear-gradient(to right, @bgwhite 0%, @textwhite 50%, @bgwhite 100%);
+    margin-bottom: 4px;
+  }
+  .header-box {
+    margin-bottom: 29px;
+    .header-text {
+      position: relative;
+      top: -21px;
+      background-color: @bgwhite;
+      padding: 0 9px;
+    }
+    .header-p {
+      position: relative;
+      top: -21px;
+    }
+  }
+  .header-text > .left-squares + span {
+    color: @mainblue;
+  }
+  .header-text > .left-squares + span + span {
+    color: @mainblack;
+  }
+  .owl-carousel {
+    .owl-nav > * {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 3px;
+    }
+    .owl-prev {
+      left: 0;
+      top: -115px;
+      background-color: @mainblack;
+      &:after {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        content: '';
+        border-style: solid;
+        border-width: 7px 9px 7px 0px;
+        border-color: transparent @textwhite transparent transparent;
+      }
+    }
+    .owl-next {
+      top: -113px;
+      right: 0;
+      background-color: @mainblue;
+      &:after {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 0 7px 9px;
+        border-color: transparent transparent transparent @textwhite;
+      }
+    }
+    .card {
+      width: 270px;
+      display: inline-block;
+      text-align: center;
+      border-radius: 3px;
+      padding-bottom: 16px;
+      &:hover {
+        .card-photo {
+          background-color: @mainblue;
+        }
+        .card-photo > .card-name {
+          background-color: @mainblack;
+        }
+        .card-photo .contacts-square-box {
+          display: inline-block;
+        }
+        .card-email > .email-address {
+          color: @mainblue;
+        }
+      }
+      .card-photo {
+        background-color: #8a8a8a;
+        width: 270px;
+        height: 270px;
+        .contacts-square-box {
+          display: none;
+          .contacts-square {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            background-color: @textwhite;
+            transform: rotate(45deg);
+            border-radius: 5px;
+            text-align: center;
+            .contacts-icon {
+              display: inline-block;
+              vertical-align: middle;
+              transform: rotate(-45deg);
+            }
+            .fb-icon {
+              .sprite(@fbicon);
+            }
+            .twitter-icon {
+              .sprite(@twittericon);
+            }
+            .google-icon {
+              .sprite(@googleplusicon);
+            }
+            .vkontakte-icon {
+              .sprite(@vkontakteicon);
+            }
+            .ball-icon {
+              .sprite(@ballicon);
+            }
+            &:nth-child(2) {
+              background-color: @mainblack;
+            }
+          }
+        }
+        .card-name {
+          display: inline-block;
+          position: relative;
+          top: -22px;
+          background-color: @mainblue;
+          padding: 16px 23px;
+          display: inline-block;
+          border-radius: 3px;
+          &-text {
+            font-family: @rabold;
+            color: @textwhite;
+            text-transform: uppercase;
+            font-size: 13px;
+          }
+        }
+      }
+      .card-border {
+        width: 270px;
+        box-sizing: border-box;
+        border: 1px solid #aaaaaa;
+        .card-position {
+          padding-top: 38px;
+          font-size: 12px;
+          margin-bottom: 34px;
+        }
+        .contact-box > * {
+          margin-bottom: 16px;
+        }
+        .contact-box > * > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .contact-box {
+          color: #aaaaaa;
+          font-size: 10px;
+          .email-icon {
+            margin-right: 16px;
+            .sprite(@mailicon);
+          }
+          .phone-icon {
+            margin-right: 16px;
+            .sprite(@phoneicon);
+          }
+        }
+      }
+    }
+  }
+}
+
+

@@ -1,20 +1,20 @@
-.counterup{
+//styles of counterup section
+.counterup {
   text-align: center;
   background-color: @mainblack;
   padding: 76px 40px 95px 40px;
-  .case-icon-square{
-    position: absolute;
-    top: -97px;
-    left: 137px;
-    border-radius: 5px;
+  .case-icon-square {
     display: inline-block;
+    position: relative;
+    top: -97px;
+    border-radius: 5px;
     background-color: @mainblue;
     width: 42px;
     height: 42px;
     padding: 12px 10px;
     box-sizing: border-box;
     transform: rotate(45deg);
-    .case-icon{
+    .case-icon {
       .sprite(@caseicon);
       transform: rotate(-45deg);
     }
@@ -45,7 +45,7 @@
       display: inline-block;
       margin-bottom: 18px;
     }
-    .counter-icon-box{
+    .counter-icon-box {
       .counter-line {
         height: 1px;
         width: 270px;
@@ -60,34 +60,34 @@
           .counter-compleateicon {
             .sprite(@compleateicon);
           }
-          .counter-hoursicon{
+          .counter-hoursicon {
             .sprite(@hoursicon);
           }
-          .counter-solvedicon{
+          .counter-solvedicon {
             .sprite(@solvedicon);
           }
-          .counter-satisfiedicon{
+          .counter-satisfiedicon {
             .sprite(@satisfiedicon);
           }
         }
       }
     }
-    .counter-text{
+    .counter-text {
       font-size: 14px;
       font-family: @rabold;
       color: @textblack;
       text-transform: uppercase;
       text-align: center;
       margin-top: 23px;
-      span{
-       font-size: 10px;
+      span {
+        font-size: 10px;
 
       }
     }
-    &:nth-child(2) .blacksquare{
-    background-color: @mainblue;
+    &:nth-child(2) .blacksquare {
+      background-color: @mainblue;
     }
-    &:last-child{
+    &:last-child {
       margin-right: 0;
     }
   }

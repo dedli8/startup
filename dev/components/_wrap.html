@@ -5,6 +5,7 @@
     <title>Startuprr</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <meta name="viewport" content="width=device-width">
     <script src="js/jquery-3.3.1.min.js"></script>
     <script>
@@ -20,5 +21,16 @@
 <!--#middle-->
 <script src="js/jquery.waypoints.min.js"></script>
 <script src="js/jquery.counterup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script>
+    $('.owl-carousel').owlCarousel({
+        items: 4,
+        loop:true,
+        margin:30,
+        nav:true,
+    });
+    $(".owl-prev").html("");
+    $(".owl-next").html("");
+</script>
 </body>
 </html>
