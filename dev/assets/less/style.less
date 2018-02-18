@@ -29,6 +29,9 @@ a{
         transform: translateY(-50%);
     }
 }
+
+//common header styles
+
 .header-box {
     margin-bottom: 50px;
     .header-text > *{
@@ -56,11 +59,44 @@ a{
 
 }
 
+//carousel buttons styles
+.owl-nav > * {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+}
+.owl-prev {
+    &:after {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        content: '';
+        border-style: solid;
+        border-width: 7px 9px 7px 0px;
+        border-color: transparent @textwhite transparent transparent;
+    }
+}
+.owl-next {
+    &:after {
+        position: absolute;
+        top: 8px;
+        left: 12px;
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 7px 0 7px 9px;
+        border-color: transparent transparent transparent @textwhite;
+    }
+}
+
 @import "../../components/nav/_nav";
 @import "../../components/amazingfeatures/_amazingfeatures";
 @import "../../components/advantages/_advantages";
 @import "../../components/counterup/_counterup";
 @import "../../components/satisfied/_satisfied";
 @import "../../components/team/_team";
+@import "../../components/footerslider/_footerslider";
 
 

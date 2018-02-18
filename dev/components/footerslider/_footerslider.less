@@ -1,0 +1,30 @@
+//styles of counterup section
+
+.footerslider {
+  background-color: @mainblack;
+  padding: 45px 0;
+  .owl-carousel {
+    .owl-prev {
+      left: -40px;
+      top: 67px;
+      background-color: @textwhite;
+      &:after{
+        border-color: transparent @mainblue transparent transparent;
+      }
+    }
+    .owl-next {
+      top: 67px;
+      right: -40px;
+      background-color: @mainblue;
+    }
+    .footerslider-item {
+      text-align: center;
+      width: 270px;
+      height: 165px;
+      background-color: #363636;
+      a{
+        display: block;
+      }
+    }
+  }
+}
