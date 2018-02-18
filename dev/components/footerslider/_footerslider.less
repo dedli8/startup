@@ -5,17 +5,19 @@
   padding: 45px 0;
   .owl-carousel {
     .owl-prev {
-      left: -40px;
-      top: 67px;
+      left: 0px;
+      top: 195px;
       background-color: @textwhite;
+      .media(@width-max, {left: -40px; top: 67px;});
       &:after{
         border-color: transparent @mainblue transparent transparent;
       }
     }
     .owl-next {
-      top: 67px;
-      right: -40px;
+      top: 195px;
+      right: 0px;
       background-color: @mainblue;
+      .media(@width-max, {left: -40px; top: 67px;});
     }
     .footerslider-item {
       text-align: center;

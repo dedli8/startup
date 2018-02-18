@@ -12,11 +12,28 @@ for (var i = 0; i < btns.length; i++) {
 // owl carousel initialize
 
 $('.owl-carousel').owlCarousel({
-    items: 4,
     loop:true,
-    margin:30,
+    // margin:30,
     nav:true,
-    dots:false
+    dots:false,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:2,
+            center:true
+        },
+        640:{
+            items:2,
+            center:true
+        },
+        900:{
+            items:3,
+            center:true
+        },
+        1170:{
+            items:4
+        }
+    }
 });
 
 // delete text in buttons in owl carousel
