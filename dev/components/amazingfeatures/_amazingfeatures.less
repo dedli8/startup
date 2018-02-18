@@ -1,18 +1,23 @@
 //styles of amazingfeatures section
 .af {
-  overflow-y: hidden;
-  padding: 75px 0 0 13px;
+  padding-top: 20px;
   background-color: @mainblack;
   border-top: 2px solid #dedede;
   text-align: center;
+  .media(@width-max, { padding: 75px 0 0 13px; overflow-y: hidden; });
   .container {
+    .header-box {
+      margin-bottom: 20px;
+      .media(@width-max, { margin-bottom: 50px; });
+    }
     .row {
       .af-menu {
-        width: 100%/3;
-        float: left;
-        padding-top: 40px;
+        padding-left: 0;
+        display: inline-block;
+        .media(@width-max, { float: left; padding-top: 40px; text-align: left });
         .af-item {
-          margin-bottom: 67px;
+          margin-bottom: 20px;
+          .media(@width-max, { margin-bottom: 67px; });
           .af-icon {
             display: inline-block;
             vertical-align: middle;
@@ -49,11 +54,10 @@
         }
       }
       .display-container {
-        float: right;
-        position: relative;
-        bottom: -111px;
-        height: 390px;
+        display: none;
+        .media(@width-max, {display: inline-block; float: right; position: relative; bottom: -111px; height: 390px;});
         .display-pic1 {
+          display: inline-block;
           position: absolute;
           right: 0;
           bottom: 0;
@@ -61,6 +65,7 @@
           height: 500px;
         }
         .display-pic2 {
+          display: inline-block;
           width: 500px;
           height: 354px;
           position: absolute;
