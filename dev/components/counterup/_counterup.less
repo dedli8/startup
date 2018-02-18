@@ -2,9 +2,11 @@
 .counterup {
   text-align: center;
   background-color: @mainblack;
-  padding: 76px 40px 95px 40px;
+  padding: 20px 40px 20px 40px;
+  .media(@width-mid, { padding: 76px 40px 95px 40px;});
   .case-icon-square {
-    top: -97px;
+    top: -41px;
+    .media(@width-mid, { top: -97px;});
     .case-icon {
       .sprite(@caseicon);
     }
