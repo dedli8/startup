@@ -1,0 +1,31 @@
+footer{
+  background-color: #333333;
+  text-align: center;
+  padding: 30px 0 30px 0;
+  .case-icon-square {
+    cursor: pointer;
+    top: -50px;
+    padding: 18px;
+    box-sizing: border-box;
+    .case-icon {
+      position: absolute;
+      top: 5px;
+      left: -25px;
+      right: -10px;
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 5px 7px 5px;
+        border-color: transparent transparent @textwhite transparent;
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .footer-text{
+    color: @textwhite;
+    font-size: 12px;
+    font-family: @rabold;
+  }
+}

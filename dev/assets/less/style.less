@@ -59,6 +59,23 @@ a{
 
 }
 
+//icons in square styles
+
+.case-icon-square {
+    display: inline-block;
+    position: relative;
+    border-radius: 5px;
+    background-color: @mainblue;
+    width: 42px;
+    height: 42px;
+    padding: 12px 10px;
+    box-sizing: border-box;
+    transform: rotate(45deg);
+    .case-icon {
+        transform: rotate(-45deg);
+    }
+}
+
 //carousel buttons styles
 .owl-nav > * {
     position: absolute;
@@ -98,5 +115,6 @@ a{
 @import "../../components/satisfied/_satisfied";
 @import "../../components/team/_team";
 @import "../../components/footerslider/_footerslider";
+@import "../../components/footer/_footer";
 
 

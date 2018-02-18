@@ -35,3 +35,10 @@ function setGrayImg (){
     newSrc += ".png";
     this.src = newSrc;
 }
+
+// top window button
+
+document.querySelector("footer > .case-icon-square").addEventListener("click", function () {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+});
