@@ -3,26 +3,30 @@
 .nav-section {
   padding: 30px 0;
   background-color: @bgwhite;
+  text-align: center;
   .logo {
-    float: left;
+    .media(@width-mid, {
+      float: left;});
+  }
   }
   .nav {
-    float: right;
-    a {
+    .media(@width-mid, {
+      float: right;});
+    .nav-item {
       display: inline-block;
+      vertical-align: middle;
       padding: 15px;
       font-family: @rabold;
       border-radius: 3px;
     }
     .search {
-      .sprite(@searchicon);
-      padding: 0;
-      margin-left: 15px;
-      vertical-align: middle;
+        .sprite(@searchicon);
+        padding: 0;
+        margin-left: 15px;
+        vertical-align: middle;
     }
     .active {
       background-color: @mainblue;
       color: @textwhite;
     }
   }
-}
