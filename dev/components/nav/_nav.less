@@ -4,31 +4,36 @@
   padding: 10px 0;
   background-color: @bgwhite;
   text-align: center;
-  .media(@width-mid, {
-    padding: 30px 0;});
-}
-  .logo {
-    .media(@width-mid, {
-      float: left;});
+  .media(@width-mid, { padding: 30px 0; });
+  a {
+    display: inline-block;
+    .media(@width-mid, { float: left; });
+    .logo {
+
+    }
   }
   .nav {
-    .media(@width-mid, {
-      float: right;});
+    .media(@width-mid, { float: right; });
     .nav-item {
       display: inline-block;
       vertical-align: middle;
       padding: 15px;
       font-family: @rabold;
       border-radius: 3px;
+      &:hover {
+        background-color: @mainblue;
+        color: @textwhite;
+      }
     }
     .search {
-        .sprite(@searchicon);
-        padding: 0;
-        margin-left: 15px;
-        vertical-align: middle;
+      .sprite(@searchicon);
+      padding: 0;
+      margin-left: 15px;
+      vertical-align: middle;
     }
-    .active {
+    .nav-active {
       background-color: @mainblue;
       color: @textwhite;
     }
   }
+}
