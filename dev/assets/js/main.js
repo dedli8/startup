@@ -61,7 +61,7 @@ $(".owl-next").html("");
 // change img in second slider
 
 (function () {
-    var item = document.querySelectorAll('.footerslider-item img');
+    var item = document.querySelectorAll('.footerslider-item');
     for (var i = 0; i < item.length; i++) {
         item[i].addEventListener("mouseover", setWhiteImg);
         item[i].addEventListener("mouseout", setGrayImg);
@@ -69,17 +69,17 @@ $(".owl-next").html("");
 })();
 
 function setWhiteImg() {
-    var targetSrc = this.src;
+    var targetSrc = this.querySelector('img').src;
     var newSrc = targetSrc.slice(0, -4);
     newSrc += "w.png";
-    this.src = newSrc;
+    this.querySelector('img').src = newSrc;
 }
 
 function setGrayImg() {
-    var targetSrc = this.src;
+    var targetSrc = this.querySelector('img').src;
     var newSrc = targetSrc.slice(0, -5);
     newSrc += ".png";
-    this.src = newSrc;
+    this.querySelector('img').src = newSrc;
 }
 
 // top window button
