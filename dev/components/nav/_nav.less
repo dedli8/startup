@@ -26,10 +26,13 @@
       }
     }
     .search {
-      .sprite(@searchicon);
-      padding: 0;
+      display: inline-block;
+      padding: 15px 0 0 0;
       margin-left: 15px;
-      vertical-align: middle;
+      .search-icon{
+        display: inline-block;
+        .sprite(@searchicon);
+      }
     }
     .nav-active {
       background-color: @mainblue;
